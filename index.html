@@ -3,13 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Portfolio</title>
+    <title>Internship Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    
+    <!-- Sticky Navigation -->
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">Se Sar Lin Lat Wai</a>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#internship">Internship</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -23,7 +34,8 @@
             <div class="hero-buttons">
                 <button class="btn primary"
                     onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</button>
-                
+                <button class="btn outline"
+                    onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})">Skills</button>
                 <button class="btn ghost"
                     onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button>
                 <!-- NEW GitHub button -->
@@ -43,12 +55,64 @@
         </p>
     </section>
 
-    
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h2>Technical skills</h2>
 
-       
+        <!-- Skill cards -->
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML, CSS</li>
+                    <li>JavaScript (basic)</li>
+                    <li>React.js (basic)</li>
+                </ul>
+            </div>
 
-    
-                
+            <div class="skill-card">
+                <h3>Backend</h3>
+                <ul>
+                    <li>Node.js, Express</li>
+                    <li>MongoDB (basic)</li>
+                    <li>REST APIs</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tools & others</h3>
+                <ul>
+                    <li>Git/GitHub, VS Code</li>
+                    <li>JWT authentication (basic)</li>
+                    <li>Deployment basics</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Inline quick links -->
+        <div class="skills-actions">
+            <button class="btn small"
+                onclick="document.getElementById('internship').scrollIntoView({behavior:'smooth'})">See internship
+                goal</button>
+            <a class="btn small outline" href="mailto:sarse237@gmail.com">Hire me</a>
+        </div>
+    </section>
+
+    <!-- INTERNSHIP REQUEST -->
+    <section id="internship" class="internship">
+        <h2>Internship request</h2>
+        <p>
+            I am eager to join your organization as an intern where I can improve my skills,
+            contribute to team projects, and learn from experienced developers.
+            I am committed, responsible, and ready to grow professionally.
+        </p>
+        <div class="internship-actions">
+            <a class="btn primary"
+                href="mailto:sarse237@gmail.com?subject=Internship%20Opportunity%20-%20Se%20Sar%20Lin%20Lat%20Wai">Contact
+                via email</a>
+            <a class="btn outline" href="#contact">View contact info</a>
+        </div>
+    </section>
 
     <!-- CONTACT -->
     <section id="contact" class="contact">
@@ -67,7 +131,7 @@
 
     <!-- FOOTER -->
     <footer>
-        
+        <p>© 2026 BCSc Internship Portfolio</p>
         <!-- GitHub link in footer -->
         <a class="btn github" href="https://github.com/Sesar5899/SeSarLinLatWai-Portfolio" target="_blank">GitHub
             Repository</a>
@@ -77,6 +141,3 @@
 </body>
 
 </html>
-
-
-
